@@ -20,7 +20,7 @@ RUN yum install -y --enablerepo=centosplus epel-release \
 
 # Add configuration files, bashrc and other tweaks
 ADD ./ruby /opt/ruby/
-ADD ./.sti/bin/usage /opt/ruby/bin/
+ADD ./.sti/bin/ /opt/ruby/bin/
 
 # Default STI scripts url
 ENV STI_SCRIPTS_URL https://raw.githubusercontent.com/openshift/ruby-20-centos/master/.sti/bin
